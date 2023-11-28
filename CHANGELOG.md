@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Fix title in readme.md
+
 ## [0.0.1] - 2023-11-27 - cb9356d
 
 ### Added
