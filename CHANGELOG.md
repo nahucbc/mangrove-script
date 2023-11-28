@@ -7,7 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Add .gitignore
-- Add CHANGELOG.md
-- Add LICENSE
-- Add README.md
+## [0.0.1] - 2023-11-27
+
+### Added
+
+- Badges in README.md
+
+- .gitignore
+- CHANGELOG.md
+- LICENSE
+- README.md
