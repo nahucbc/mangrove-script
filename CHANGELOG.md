@@ -7,17 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Added grammar.ebnf
 - Include Cargo.lock
 
 ## [0.1.0] - 2023-11-27 - e70fd0d
 
-### Fix 
+### Fix
 
 - Title in readme.md
 
 ### Set up
 
-- Initialized cargo 
+- Initialized cargo
 
 ## [0.0.1] - 2023-11-27 - cb9356d
 
