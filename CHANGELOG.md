@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Changed grammar.ebnf
 - Changed support.md, added changelog history.
 - Added support.md
 - Added readme.md in datapack
