@@ -7,13 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Changed changelog.md
-- Changed grammar.ebnf
-- Changed support.md, added changelog history.
+## [0.2.0] - 2024-1-10
+
+### Added
+
 - Added support.md
-- Added readme.md in datapack
+- Added readme.md in datapack, explain why to use the datapack.
 - Added grammar.ebnf
-- Include Cargo.lock
+
+### Changed
+
+- Changed readme.md, update to v0.2.0
+- Changed .gitignore, include Cargo.lock
+- Changed changelog.md, updated this file
+- Changed grammar.ebnf, created first version of the lenguage
+- Changed support.md, datapack support details and changelog changes
 
 ## [0.1.0] - 2023-11-27 - e70fd0d
 
