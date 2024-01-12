@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Added lexer.rs
 - Changed .gitignore
 
 ## [0.2.0] - 2024-1-10 - 6089b9c
