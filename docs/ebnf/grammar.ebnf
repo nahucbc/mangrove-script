@@ -46,11 +46,11 @@ assignment = identifier, [type], "=", expression;
 
 block = "{", [statement], "}"
 
-if = "if", expression, ":", block | else;
+if = "if", expression, ":", block, [else];
 
 else = "else", ":", block;
 
-while = "while", condition, ":", block;
+while = "while", expression, ":", block;
 
 for = "for", identifier, "in", identifier, ":", block;
 

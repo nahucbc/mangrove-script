@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Fixed incorrect grammar for if-else and while
 - Fixed comma to literal
 - Fixed double colon to literal
 - Fixed missing block
