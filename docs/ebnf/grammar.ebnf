@@ -11,8 +11,6 @@ alpha = "A" | "B" | "C" | "D" | "E" | "F" | "G"
 
 digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 
-quotes = "'" | '"';
-
 square_brackets = "[" | "]";
 
 key_brackets = "{" | "}";
@@ -29,7 +27,12 @@ semicolon = ";";
 
 identifier = (character | "_"), {character | "_"};
 
-string = quotes, {character | "\\" (quotes | "\\")}, quotes;
+single_quote = "'"
+
+double_quote = '"'
+
+string = single_quote, { character | "\\" single_quote }, single_quote 
+         | double_quote, { character | "\\" double_quote }, double_quote;
 
 i8 = "-128".."127";
 
