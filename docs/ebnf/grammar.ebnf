@@ -13,8 +13,6 @@ digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 
 square_brackets = "[" | "]";
 
-parentheses = "(" | ")";
-
 identifier = (character | "_"), {character | "_"};
 
 single_quote = "'"
@@ -64,7 +62,7 @@ term = factor, {("*" | "/"), factor};
 
 factor = literal | identifier | "(", expression, ")";
 
-function = "fn", identifier, parentheses, [parameters], parentheses, double_colon, key_brackets [statement], key_brackets;
+function = "fn", identifier, "(", [parameters], ")", double_colon, key_brackets [statement], key_brackets;
 
 function_call = identifier, "(", [parameters], ")";
 

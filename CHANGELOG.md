@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Removed parentheses for clarify in the syntax
 - Changed key brackets to block in statments to simplify and clarify syntax
 - Removed dot, comma, colon, double colon for clarify in the syntax
 - Changed quotes, simplify the rule
