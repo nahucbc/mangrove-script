@@ -46,13 +46,13 @@ assignment = identifier, [type], "=", expression;
 
 block = "{", [statement], "}"
 
-if = "if", expression, double_colon, block | else;
+if = "if", expression, ":", block | else;
 
-else = "else", double_colon, block;
+else = "else", ":", block;
 
-while = "while", condition, double_colon, block;
+while = "while", condition, ":", block;
 
-for = "for", identifier, "in", identifier, double_colon, block;
+for = "for", identifier, "in", identifier, ":", block;
 
 ops = "==" | "!=" | "<" | ">" | "<=" | ">=" ;
 
@@ -62,7 +62,7 @@ term = factor, {("*" | "/"), factor};
 
 factor = literal | identifier | "(", expression, ")";
 
-function = "fn", identifier, "(", [parameters], ")", double_colon, block;
+function = "fn", identifier, "(", [parameters], ")", ":", block;
 
 function_call = identifier, "(", [parameters], ")";
 
