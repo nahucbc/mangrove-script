@@ -13,8 +13,6 @@ digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 
 square_brackets = "[" | "]";
 
-key_brackets = "{" | "}";
-
 parentheses = "(" | ")";
 
 identifier = (character | "_"), {character | "_"};
@@ -48,13 +46,15 @@ type = int | string;
 
 assignment = identifier, [type], "=", expression;
 
-if = "if", expression, double_colon, key_brackets, [statement] key_brackets | else;
+block = "{", [statement], "}"
 
-else = "else", double_colon, key_brackets, [statement], key_brackets;
+if = "if", expression, double_colon, block | else;
 
-while = "while", condition, double_colon, key_brackets, [statement], key_brackets;
+else = "else", double_colon, block;
 
-for = "for", identifier, "in", identifier, double_colon, key_brackets, [statement], key_brackets;
+while = "while", condition, double_colon, block;
+
+for = "for", identifier, "in", identifier, double_colon, block;
 
 ops = "==" | "!=" | "<" | ">" | "<=" | ">=" ;
 
