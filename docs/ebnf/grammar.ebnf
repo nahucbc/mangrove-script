@@ -62,7 +62,7 @@ term = factor, {("*" | "/"), factor};
 
 factor = literal | identifier | "(", expression, ")";
 
-function = "fn", identifier, "(", [parameters], ")", double_colon, key_brackets [statement], key_brackets;
+function = "fn", identifier, "(", [parameters], ")", double_colon, block;
 
 function_call = identifier, "(", [parameters], ")";
 
