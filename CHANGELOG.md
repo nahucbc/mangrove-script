@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Removed dot, comma, colon, double colon for clarify in the syntax
 - Changed quotes, simplify the rule
 - Added missings brackets
 - Added lexer.rs

@@ -17,14 +17,6 @@ key_brackets = "{" | "}";
 
 parentheses = "(" | ")";
 
-dot = "."; 
-
-comma = ",";
-
-double_colon = ":";
-
-semicolon = ";";
-
 identifier = (character | "_"), {character | "_"};
 
 single_quote = "'"
