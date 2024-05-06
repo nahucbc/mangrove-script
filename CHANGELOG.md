@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Fixed missing semicolon
 - Removed single quote and double quote for clarify in the syntax
 - Fixed number range format in EBNF
 - Fixed incorrect grammar for if-else and while

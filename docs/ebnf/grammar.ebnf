@@ -40,7 +40,7 @@ type = int | string;
 
 assignment = identifier, [type], "=", expression;
 
-block = "{", [statement], "}"
+block = "{", [statement], "}";
 
 if = "if", expression, ":", block, [else];
 
