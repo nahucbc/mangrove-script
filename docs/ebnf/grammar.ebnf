@@ -15,12 +15,8 @@ square_brackets = "[" | "]";
 
 identifier = (character | "_"), {character | "_"};
 
-single_quote = "'"
-
-double_quote = '"'
-
-string = single_quote, { character | "\\" single_quote }, single_quote 
-         | double_quote, { character | "\\" double_quote }, double_quote;
+string = "'", { character | "\\", "'" }, "'"
+         | '"', { character | "\\", '"' }, '"';
 
 i8 = "-128".."127";
 
