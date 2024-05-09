@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Added basic language constructs and utilities, cleaned EBNF and restructured
 - Changed expression and statement, replaced commas with pipes for clean syntax and clarify
 - Changed for clean
 - Added comparison ops and clean syntax

@@ -1,4 +1,6 @@
-character = alpha | digit ;
+(* Essential *)
+
+character = alpha | digit;
 
 alpha = "A" | "B" | "C" | "D" | "E" | "F" | "G"
       | "H" | "I" | "J" | "K" | "L" | "M" | "N"
@@ -7,14 +9,16 @@ alpha = "A" | "B" | "C" | "D" | "E" | "F" | "G"
       | "a" | "b" | "c" | "d" | "e" | "f" | "g"
       | "h" | "i" | "j" | "k" | "l" | "m" | "n"
       | "o" | "p" | "q" | "r" | "s" | "t" | "u"
-      | "v" | "w" | "x" | "y" | "z" ;
+      | "v" | "w" | "x" | "y" | "z";
 
-digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
 
 identifier = (character | "_"), {character | "_"};
 
 string = "'", { character | "\\", "'" }, "'"
          | '"', { character | "\\", '"' }, '"';
+
+(* Types *)
 
 i8 = "-128".."127";
 
@@ -36,31 +40,29 @@ int = i8 | u8 | i16 | u16 | i32 | u32 | i64 | u64;
 
 type = int | string;
 
+(* Arithmetics And OPs*)
+
 arithmetic_ops = "+" | "-" | "*" | "/";
 
-comparison_ops = "==" | "!=" | "<" | ">" | "<=" | ">=" ;
+comparison_ops = "==" | "!=" | "<" | ">" | "<=" | ">=";
 
 number = [ "-" ], digit ,{ digit };
 
 arithmetic_factor = number | "(", arithmetic_expression, ")";
 
-arithmetic_term = arithmetic_factor, { ("*" | "/"), arithmetic_factor };
+arithmetic_term = arithmetic_factor, { ("*" | "/"), arithmetic_factor};
 
-arithmetic_expression = arithmetic_term, { ("+" | "-"), arithmetic_term };
+arithmetic_expression = arithmetic_term, { ("+" | "-"), arithmetic_term};
 
 comparison = arithmetic_expression, comparison_ops, arithmetic_expression;
+
+(* Basic Constructs*)
 
 assignment = identifier, [type], "=", expression;
 
 block = "{", [statement], "}";
 
-if = "if", expression, ":", block, [else];
-
-else = "else", ":", block;
-
-while = "while", expression, ":", block;
-
-for = "for", identifier, "in", identifier, ":", block;
+(* Function *)
 
 function = "fn", identifier, "(", [parameters], ")", ":", block;
 
@@ -68,23 +70,39 @@ function_call = identifier, "(", [parameters], ")";
 
 parameters = {identifier, {",", identifier}};
 
-decorator = "@", identifier, [parameters];
+(* Conditionals *)
+
+conditional_statement = if;
+
+if = "if", expression, ":", block, [else];
+
+else = "else", ":", block;
+
+loop_statement = while, for;
+
+while = "while", expression, ":", block;
+
+for = "for", identifier, "in", identifier, ":", block;
+
+(* Objects *)
 
 class = "class", identifier, ":", class_body;
 
 class_body = {class_property | class_method};
 
+class_statement = class_property | class_method;
+
 class_property = assignment;
 
 class_method = function;
 
-conditional_statement = if;
-
-loop_statement = while, for;
-
-class_statement = class_property | class_method;
+(* Constructs *)
 
 expression = function_call | identifier | string | arithmetic_expression | comparison; 
 
 statement = expression | assignment | conditional_statement | loop_statement | class_statement;
 
+(* Compiler Utility *)
+(*
+decorator = "@", identifier, [parameters];
+*)
