@@ -7,27 +7,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Added basic language constructs and utilities, cleaned EBNF and restructured
-- Changed expression and statement, replaced commas with pipes for clean syntax and clarify
-- Changed for clean
-- Added comparison ops and clean syntax
-- Removed term from expression
-- Changed arithmetic syntax
+## [0.3.0] - 2024-9-5
+
+### Removed
+
+- Removed dot, comma, colon, double colon for clarify in the syntax
+- Removed parentheses for clarify in the syntax
 - Removed square brackets for clarify in the syntax
-- Fixed missing semicolon
 - Removed single quote and double quote for clarify in the syntax
+- Removed term from expression
+
+### Fixed
+
 - Fixed number range format in EBNF
 - Fixed incorrect grammar for if-else and while
 - Fixed comma to literal
 - Fixed double colon to literal
 - Fixed missing block
-- Removed parentheses for clarify in the syntax
-- Changed key brackets to block in statments to simplify and clarify syntax
-- Removed dot, comma, colon, double colon for clarify in the syntax
-- Changed quotes, simplify the rule
+- Fixed missing semicolon
+
+### Added
+
 - Added missings brackets
 - Added lexer.rs
+- Added comparison ops and clean syntax
+- Added basic language constructs and utilities, cleaned EBNF and restructured
+
+### Changed
+
 - Changed .gitignore
+- Changed quotes, simplify the rule
+- Changed key brackets to block in statments to simplify and clarify syntax
+- Changed arithmetic syntax
+- Changed expression and statement, replaced commas with pipes for clean syntax and clarify
+- Changed for clean
 
 ## [0.2.0] - 2024-1-10 - 6089b9c
 

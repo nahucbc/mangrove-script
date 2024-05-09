@@ -40,7 +40,7 @@ int = i8 | u8 | i16 | u16 | i32 | u32 | i64 | u64;
 
 type = int | string;
 
-(* Arithmetics And OPs*)
+(* Arithmetics And OPs *)
 
 arithmetic_ops = "+" | "-" | "*" | "/";
 
@@ -56,7 +56,7 @@ arithmetic_expression = arithmetic_term, { ("+" | "-"), arithmetic_term};
 
 comparison = arithmetic_expression, comparison_ops, arithmetic_expression;
 
-(* Basic Constructs*)
+(* Basic Constructs *)
 
 assignment = identifier, [type], "=", expression;
 
