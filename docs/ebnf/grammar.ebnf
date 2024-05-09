@@ -82,7 +82,7 @@ loop_statement = while, for;
 
 class_statement = class_property | class_method;
 
-expression = function_call, identifier, string, term; 
+expression = function_call, identifier, string, arithmetic_expression; 
 
 statement = expression, assignment, conditional_statement, loop_statement, class_statement;
 

@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Removed term from expression
 - Changed arithmetic syntax
 - Removed square brackets for clarify in the syntax
 - Fixed missing semicolon
