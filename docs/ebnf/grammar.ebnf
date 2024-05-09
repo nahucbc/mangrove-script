@@ -36,17 +36,17 @@ int = i8 | u8 | i16 | u16 | i32 | u32 | i64 | u64;
 
 type = int | string;
 
-arithmetic_ops = "+" | "-" | "*" | "/" ;
+arithmetic_ops = "+" | "-" | "*" | "/";
 
 comparison_ops = "==" | "!=" | "<" | ">" | "<=" | ">=" ;
 
-number = [ "-" ], digit ,{ digit } ;
+number = [ "-" ], digit ,{ digit };
 
 arithmetic_factor = number | "(", arithmetic_expression, ")";
 
-arithmetic_term = arithmetic_factor, { ("*" | "/") ,arithmetic_factor };
+arithmetic_term = arithmetic_factor, { ("*" | "/"), arithmetic_factor };
 
-arithmetic_expression = arithmetic_term, { ("+" | "-") ,arithmetic_term };
+arithmetic_expression = arithmetic_term, { ("+" | "-"), arithmetic_term };
 
 comparison = arithmetic_expression, comparison_ops, arithmetic_expression;
 
